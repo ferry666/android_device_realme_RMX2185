@@ -23,17 +23,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2185/device.mk)
 
-# Inherit some common NusantaraROM stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-$(call inherit-product-if-exists, packages/apps/NusantaraParts/nadproject.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := nad_RMX2185
+PRODUCT_NAME := lineage_RMX2185
 PRODUCT_DEVICE := RMX2185
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme G35 Series
 PRODUCT_MANUFACTURER := realme
+
+# Sakura flags
+SAKURA_MAINTAINER := Fraschze97
 
 # Build info
 BUILD_FINGERPRINT := "google/sunfish/sunfish:11/RQ2A.210405.005/7181113:user/release-keys"

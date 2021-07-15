@@ -1,11 +1,11 @@
 [
   {
-    "repository" : "techyminati/proprietary_vendor_realme_RMX2185",
+    "repository" : "Fraschze97/proprietary_vendor_realme_RMX2185",
     "target_path": "vendor/realme/RMX2185",
     "branch"     : "lineage-18.1"
   },
   {
-    "repository" : "HyperTeam/packages_apps_RealmeParts",
+    "repository" : "Fraschze97/packages_apps_RealmeParts-1",
     "target_path": "packages/apps/RealmeParts",
     "branch"     : "lineage-18.1"
   },
